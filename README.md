@@ -21,6 +21,6 @@ For all sites, ensure that `DESCRIPTION` contains:
 
 ``` yaml
 template:
-  package: tidytemplate
+  package: greta.pkgdown
   bootstrap: 5
 ```
