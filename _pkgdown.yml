@@ -1,8 +1,50 @@
 url: https://greta-dev.github.io/greta.pkgdown
 template:
   bootstrap: 5
+  bslib:
+    bg: white
+    fg: "#A379CC"
+    primary: "#A379CC"
+
+home:
+  sidebar: FALSE
+  title: An R package Simple and Scalable Statistical Modelling
+  description: >
+    Write statistical models in R and fit them by MCMC and optimisation on CPUs
+    and GPUs, using Google TensorFlow. greta lets you write your own model
+    like in BUGS, JAGS and Stan, except that you write models right in R, it
+    scales well to massive datasets, and it's easy to extend and build on. See
+    the website for more information, including tutorials, examples, package
+    documentation, and the greta forum.
 
 navbar:
   structure:
-    left: [intro, reference, articles, tutorials, news]
-    right: [search, github]
+    left:
+      - get started
+      - docs
+      - examples
+      - tutorials
+      - news
+    right:
+      - comments
+      - github
+      - twitter
+  components:
+    twitter:
+      icon: fa-twitter
+      href: https://twitter.com/greta_stats
+      aria-label: Twitter
+    comments:
+      icon: fa-comments
+      href: https://forum.greta-stats.org/
+      aria-label: Forum
+    github:
+      icon: fa-github
+      href: https://github.com/greta-dev/greta
+      aria-label: GitHub
+    reference:
+      text: Reference
+      href: reference/index.html
+    news:
+      text: Changelog
+      href: news/index.html
