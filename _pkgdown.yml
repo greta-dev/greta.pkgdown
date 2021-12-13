@@ -1,10 +1,22 @@
 url: https://greta-dev.github.io/greta.pkgdown
 template:
+  includes:
+    before_title: '<a href="https://greta-stats.org"><img src="https://github.com/greta-dev/greta/raw/master/logos/main_icon.png" id="hexlogo" alt="greta" width = "144px"></a>'
+    before_body: '<p></p><div id="header-content" class="container"><div class="row"><img id="main-icon" src="https://github.com/greta-dev/greta/raw/master/logos/main_icon.png"/></div><div class="row"><p id="main-icon-text">simple and scalable statistical modelling in R</p></div></div>'
   bootstrap: 5
   bslib:
-    bg: white
+    bg: "white"
     fg: "#A379CC"
     primary: "#A379CC"
+    navbar-brand-font-size: "2rem"
+    navbar-light-color: "white"
+    navbar-light-brand-color: "white"
+    navbar-light-brand-hover-color: "white"
+    text-muted: "white"
+    navbar-light-hover-color: "white"
+    gray-300: "#dee2e6"
+    border-radius: 0.5rem
+    btn-border-radius: 0.25rem
 
 home:
   sidebar: FALSE
@@ -19,22 +31,33 @@ home:
 
 navbar:
   structure:
-    left:
-      - get started
-      - docs
-      - examples
-      - tutorials
-      - news
-    right:
-      - comments
-      - github
-      - twitter
+    left: [get_started, docs, examples, analyses, more]
+    right: [forum, twitter, github]
   components:
+    get_started:
+      text: get started
+      href: articles/get_started.html
+    examples:
+      text: examples
+      href: articles/example_models.html
+    analyses:
+      text: analyses
+      menu:
+       - text: example analysis
+         href: articles/analyses/example.html
+    docs:
+      text: docs
+      href: reference/index.html
+    more:
+      text: more
+      menu:
+       - text: why 'greta'?
+         href: articles/webpages/why_greta.html
     twitter:
       icon: fa-twitter
       href: https://twitter.com/greta_stats
       aria-label: Twitter
-    comments:
+    forum:
       icon: fa-comments
       href: https://forum.greta-stats.org/
       aria-label: Forum
